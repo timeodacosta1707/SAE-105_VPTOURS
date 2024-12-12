@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: auto;
+    background-color: #2a3489;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    margin: 0 20px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 75px;
+    height: auto;
+}
+
+.nav-links ul {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.nav-links a {
+    font-size: 23px;
+    height: 100%;
+    margin: 0 80px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.nav-links a:hover {
+    color: #2a3489;
+    transform: scale(1.1);
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    width: 70px;
+    z-index: 1100;
+    cursor: pointer;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel-container {
+    position: relative;
+    margin: 0 5%;
+    max-width: 90%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.text-overlay:hover {
+    color: #2a3489;
+    transform: scale(1.1);
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2a3489;
+}
+
+.prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 20px;
+}
+
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: 20px;
+}
+
+.ligne {
+    margin: 100px auto;
+    width: 300px;
+    height: 2px;
+    background-color: black;
+}
+
+.bienvenue-page {
+    background-color: rgb(211, 211, 211, 0.41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+}
+
+.bienvenue-page h1 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.bienvenue-page h1 span {
+    display: block;
+}
+
+.bienvenue-page h1 span:first-child {
+    font-size: 36px;
+}
+
+.bienvenue-page h1 span:last-child {
+    font-size: 55px;
+    margin-top: -60px;
+    color: #2a3489;
+    font-weight: bolder;
+}
+
+.bienvenue-page p {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    padding: 10px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.bienvenue-page p:hover {
+    color: #2a3489;
+    transform: translateY(-5px);
+    background-color: rgb(255, 255, 255, 1);
+    box-shadow: 0 6px 8px rgb(0, 0, 0, 0.15);
+}
+
+.about-us {
+    background-color: rgb(42, 52, 137, 0.1);
+    text-align: center;
+    padding: 40px 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    color: #2a3489;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonials-carousel-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #001aff1a;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+}
+
+.testimonials-carousel-container h2 {
+    text-align: center;
+    color: #2a3489;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.testimonials-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-slide {
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    padding: 20px;
+}
+
+.testimonial-slide span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-style: italic;
+    color: #2a3489;
+}
+
+.testimonials-carousel-container button {
+    color: #2a3489;
+    font-size: 24px;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.testimonials-carousel-container button:hover {
+    background-color: #2a3489;
+    color: #ffffff;
+}
+
+.testimonial-prev {
+    left: 10px;
+}
+
+.testimonial-next {
+    right: 10px;
+}
+
+footer {
+    position: relative;
+    background-color: #2a3489;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-content .logo {
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content .logo img {
+    width: 150px;
+    height: auto;
+}
+
+.scroll-top {
+    position: absolute;
+    bottom: 330px;
+    right: 20px;
+}
+
+.scroll-top a {
+    color: #ffffff;
+    font-size: 24px;
+    background-color: #2a3489;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.scroll-top a:hover {
+    background-color: #ffffff;
+    color: #2a3489;
+    transform: scale(1.1);
+}
+
+.social {
+    display: flex;
+    border: #ffffff solid 1px;
+    border-radius: 35px;
+    margin: 0 100px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    padding: 10px 10px;
+    width: 260px;
+    height: auto;
+}
+
+.social .facebook-btn {
+    padding: 0 5px;
+    bottom: 100px;
+    left: 100px;
+}
+
+.social .facebook-btn a {
+    color: #ffffff;
+    font-size: 24px;
+    background-color: #2a3489;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social .facebook-btn a:hover {
+    background-color: #ffffff;
+    color: #2a3489;
+    transform: scale(1.1);
+}
+
+.social .instagram-btn {
+    padding: 0 5px;
+    bottom: 100px;
+    left: 100px;
+}
+
+.social .instagram-btn a {
+    color: #ffffff;
+    font-size: 24px;
+    background-color: #2a3489;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social .instagram-btn a:hover {
+    background-color: #ffffff;
+    color: #2a3489;
+    transform: scale(1.1);
+}
+
+.social .x-btn {
+    padding: 0 5px;
+    bottom: 100px;
+    left: 100px;
+}
+
+.social .x-btn a {
+    color: #ffffff;
+    font-size: 24px;
+    background-color: #2a3489;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social .x-btn a:hover {
+    background-color: #ffffff;
+    color: #2a3489;
+    transform: scale(1.1);
+}
+
+.social .linkedin-btn {
+    padding: 0 5px;
+    bottom: 100px;
+    left: 100px;
+}
+
+.social .linkedin-btn a {
+    color: #ffffff;
+    font-size: 24px;
+    background-color: #2a3489;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social .linkedin-btn a:hover {
+    background-color: #ffffff;
+    color: #2a3489;
+    transform: scale(1.1);
+}
+
+.important {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.important a {
+    text-decoration: none;
+    color: #2a3489;
+    margin: 0 200px;
+}
+
+.important a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1220px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: rgb(0, 0, 0, 0.37);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+        z-index: 1000;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav-links ul {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+    }
+
+    .carousel img {
+        width: 100%;
+    }
+
+    .social {
+        display: flex;
+        border: #ffffff solid 1px;
+        border-radius: 35px;
+        margin: 0 100px;
+        margin-top: 5px;
+        margin-bottom: 50px;
+        padding: 10px 10px;
+        width: 260px;
+        height: auto;
+    }
+
+    .social div {
+        padding: 0 5px;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css">
+    <title>SAÉ 105 - Accueil</title>
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="stylesheet" href="./CSS/css_index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="./images/logo.png" alt="VPTours Logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="./HTML/site1.html">Site 1</a></li>
+                    <li><a href="./HTML/site2.html">Site 2</a></li>
+                    <li><a href="./HTML/site3.html">Site 3</a></li>
+                    <li><a href="./HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <img src="./images/hamburger.png" alt="Menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide">
+                <img src="./images/Disney/image1.jpg" alt="Image 1">
+                <a href="./HTML/site1.html" class="text-overlay">Voir plus</a>
+            </div>
+            <div class="slide">
+                <img src="./images/louvre/image1.jpg" alt="Image 2">
+                <a href="./HTML/site2.html" class="text-overlay">Voir plus</a>
+            </div>
+            <div class="slide">
+                <img src="./images/tour_eiffel/image1.jpg" alt="Image 3">
+                <a href="./HTML/site3.html" class="text-overlay">Voir plus</a>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <button class="next" onclick="moveSlide(1)">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <div class="ligne"></div>
+
+    <div class="bienvenue-page">
+        <h1><span>Bienvenue sur</span><br><span>VPTours</span></h1>
+        <p>
+            Sur VPTours, vous pourrez retrouvez différentes recommendations de destinations.<br>
+            En effet, pour le moment, nous allons vous proposer trois suggestions. Vous pouvez <br>
+            naviguer à travers notre site via notre barre de navigation, notre carrousel d'images, <br>
+            le chemin d'accès à la page qui se trouve en haut à gauche de chaque page<br>
+            ou encore le menu hamburger lors du passage du site au format téléphone. Suite à cela, <br>
+            vous pourrez remplir un formulaire afin d'avoir vos avis sur votre destination préférée.
+        </p>
+    </div>
+
+    <div class="about-us">
+        <h2>À propos de nous</h2>
+        <p>
+            Chez VPTours, nous nous engageons à vous offrir des expériences inoubliables en vous recommandant des
+            destinations uniques et inspirantes.
+            Notre mission est de faire de vos voyages des aventures exceptionnelles, en toute simplicité.
+        </p>
+    </div>
+
+    <div class="testimonials-carousel-container">
+        <h2>Ce que nos visiteurs pensent de nous</h2>
+        <div class="testimonials-carousel">
+            <div class="testimonial-slide">
+                <p>"VPTours m'a permis de découvrir des lieux incroyables, merci pour les recommandations !"</p>
+                <span>- Marie</span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="testimonial-slide">
+                <p>"Un site clair et des destinations exceptionnelles. Très satisfait !"</p>
+                <span>- Julien</span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="testimonial-slide">
+                <p>"Expérience incroyable grâce à VPTours, à refaire sans hésiter !"</p>
+                <span>- Sophie</span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <button class="testimonial-prev" onclick="moveTestimonialSlide(-1)">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <button class="testimonial-next" onclick="moveTestimonialSlide(1)">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+    <div class="ligne"></div>
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <a href="../index.html"><img src="./images/logo.png" alt="logoVPTours" id="logo-a"></a>
+            </div>
+        </div>
+        <div class="scroll-top">
+            <a href="#" id="btn-scroll">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+        <div class="social">
+            <div class="facebook-btn">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="instagram-btn">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="x-btn">
+                <a href="https://x.com" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+            <div class="linkedin-btn">
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>Téléphone : 01 23 45 67 89</p>
+            <p>Email : VPTours@mail.com</p>
+            <p>&copy; 2024 Site VPTours</p>
+        </div>
+    </footer>
+    <div class="important">
+        <a href="./HTML/mentionlegal.html">Mentions légales</a>
+        <a href="./HTML/conditionutilisation.html">Conditions d'utilisations</a>
+    </div>
+    <script src="./JS/script-menu.js"></script>
+    <script src="./JS/script-scroll.js"></script>
+    <script src="./JS/script-carousel.js"></script>
+</body>
+
+
+</html>

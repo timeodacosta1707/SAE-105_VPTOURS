@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css">
+    <title>SAÉ 105 - Contact</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/css_formulaire.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo"><img src="../images/logo.png" alt="VPTours Logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../HTML/site1.html">Site 1</a></li>
+                    <li><a href="../HTML/site2.html">Site 2</a></li>
+                    <li><a href="../HTML/site3.html">Site 3</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <img src="../images/hamburger.png" alt="Menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+    <div class="chemin">
+        <p>
+            <a href="../index.html">Accueil</a> / Contact
+        </p>
+    </div>
+
+    <section class="contact-section">
+        <h1>Contactez-nous</h1>
+        <form class="contact-form" action="../php/send_email.php" method="post">
+            <div class="name-fields">
+                <div class="field">
+                    <label for="firstName">Prénom :</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Prenom" required>
+                </div>
+                <div class="field">
+                    <label for="lastName">Nom :</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Nom" required>
+                </div>
+            </div>
+            <div class="field">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="field">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" placeholder="Écrivez ici" required></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+        <div id="responseMessage" role="alert" aria-live="polite"></div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <a href="#"><img src="../images/logo.png" alt="logoVPTours" id="logo-a"></a>
+            </div>
+        </div>
+        <div class="scroll-top">
+            <a href="#" id="btn-scroll">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+        <div class="social">
+            <div class="facebook-btn">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="instagram-btn">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="x-btn">
+                <a href="https://x.com" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+            <div class="linkedin-btn">
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>Téléphone : 0123456789</p>
+            <p>Email : VPTours@mail.com</p>
+            <p>&copy; 2024 Site VPTours</p>
+        </div>
+    </footer>
+    <div class="important">
+        <a href="../HTML/mentionlegal.html">Mentions légales</a>
+        <a href="../HTML/conditionutilisation.html">Conditions d'utilisations</a>
+    </div>
+
+    <script src="../JS/script-menu.js"></script>
+    <script src="../JS/script-scroll.js"></script>
+</body>
+
+</html>
